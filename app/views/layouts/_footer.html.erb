@@ -1,7 +1,9 @@
 <footer class="footer">
 
-  <div class="row">
-    <div class="span-footer">
+  <div class="row-footer">
+    <div class="footer-container">
+      
+    <div id="span-footer">
       <h5> Quick Links </h5>
     </br>
       <li><%= link_to "About",   company_profile_path %></li>
@@ -10,7 +12,7 @@
       <li><%= link_to "Contact Us", contact_path %></li>
   </div>
 
-      <div class="span-footer">
+      <div id="span-footer">
       <h5> Services </h5>
     </br>
       <li><%= link_to "Soil Investigation",   services_soil_investigation_path %></li>
@@ -19,31 +21,44 @@
       <li><%= link_to "Instrumentation Sales and Distribution", services_instrumentation_sales_path %></li>
   </div>
 
-      <div class="span-footer">
+      <div id="span-footer">
       <h5> Affiliation </h5>
     </br>
-      <p>itmsoil</p>
+      <p><a href="http://www.itmsoil.com" target="blank">itmsoil</a></p>
       <p>Geolab Technology Limited</p>
   </div>
 
-      <div class="span-footer">
+      <div id="span-footer">
       <h5> Location </h5>
     </br>
-      <p> GeoLS Pte Ltd </p>
-      <p> 61 Kaki Bukit Ave 1, #04-30​ </p>
-      <p> Shun Li Industrial Park​ </p>
-      <p> Singapore, 417943 </p>
-      <p> Tel  : +65 6546 5585​ </p>
-      <p> Fax : +65 6546 5595​ </p>
-      <p> admin@geols.com.sg </p>
+  <address>
+    <strong> GeoLS Pte Ltd </strong>
+    <br>
+      61 Kaki Bukit Ave 1, #04-30
+    <br>
+      Shun Li Industrial Park
+    <br>
+      Singapore, 417943
+    <br>
+    <abbr title="Phone">P:</abbr>
+      +65 6546 5585
+    <br>
+    <abbr title="Fax">F:</abbr>
+      +65 6546 5595
+    <br>
+    <abbr title="Email">E:</abbr>
+      <a href="mailto:admin@geols.com.sg">
+        admin@geols.com.sg </a>
+  </address>
 
   </div>
 </div>
 
+<br />
 
-
-  <div class="copyright">
+  <div id="copyright">
     GeoLS Pte Ltd @ Copyright 2012
   </div>
+</div>
 
 </footer>

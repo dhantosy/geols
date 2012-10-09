@@ -6,9 +6,9 @@ describe "Static pages" do
 
 	describe "Home Page" do
 		
-		it "should have the h1 'GeoLS Pte Ltd'" do
+		it "should have the h3 'GeoLS Pte Ltd'" do
 			visit root_path
-			page.should have_selector('h1', :text => 'GeoLS Pte Ltd')
+			page.should have_selector('h3', :text => 'GeoLS Pte Ltd')
     	end
 
     	it "should have the title 'Home'" do
@@ -22,7 +22,7 @@ describe "Static pages" do
 
   		it "should have the h3 'Contact Us'" do
   			visit contact_path
-  			page.should have_selector('h3', :text => 'Contact Us')
+  			page.should have_selector('h1', :text => 'Contact Us')
   		end
 
   		it "should have the title 'Contact Us'" do
@@ -36,7 +36,7 @@ describe "Static pages" do
 
   		it "should have the h3 'Company Profile'" do
   			visit company_profile_path
-  			page.should have_selector('h3', :text => 'Company Profile')
+  			page.should have_selector('h1', :text => 'Company Profile')
   		end
 
   		it "should have the title 'Company Profile'" do
@@ -48,9 +48,9 @@ describe "Static pages" do
 
   	describe "Services" do
 
-  		it "should have the h3 'Services'" do
+  		it "should have the h1 'Services'" do
   			visit services_path
-  			page.should have_selector('h3', :text => 'Services')
+  			page.should have_selector('h1', :text => 'Services')
   		end
 
   		it "should have the title 'Services'" do
@@ -62,9 +62,9 @@ describe "Static pages" do
 
   	describe "News" do
 
-  		it "should have the h3 'News'" do
+  		it "should have the h1 'News'" do
   			visit news_path
-  			page.should have_selector('h3', :text => 'News')
+  			page.should have_selector('h1', :text => 'News')
   		end
 
   		it "should have the title 'News'" do
@@ -76,9 +76,9 @@ describe "Static pages" do
 
     describe "Soil Investigation" do
 
-      it "should have the h3 'Soil Investigation'" do
+      it "should have the h1 'Soil Investigation'" do
         visit services_soil_investigation_path
-        page.should have_selector('h3', :text => 'Soil Investigation')
+        page.should have_selector('h1', :text => 'Soil Investigation')
       end
 
       it "should have the title 'Soil Investigation'" do
@@ -90,9 +90,9 @@ describe "Static pages" do
 
     describe "Geotechnical Instrumentation and Monitoring" do
 
-      it "should have the h3 'Geotechnical Instrumentation and Monitoring'" do
+      it "should have the h1 'Geotechnical Instrumentation and Monitoring'" do
         visit services_geotechnical_monitoring_path
-        page.should have_selector('h3', :text => 'Geotechnical Instrumentation and Monitoring')
+        page.should have_selector('h1', :text => 'Geotechnical Instrumentation and Monitoring')
       end
 
       it "should have the title 'Geotechnical Instrumentation and Monitoring'" do
@@ -104,9 +104,9 @@ describe "Static pages" do
 
     describe "Pile Testing" do
 
-      it "should have the h3 'Pile Testing'" do
+      it "should have the h1 'Pile Testing'" do
         visit services_pile_testing_path
-        page.should have_selector('h3', :text => 'Pile Testing')
+        page.should have_selector('h1', :text => 'Pile Testing')
       end
 
       it "should have the title 'Pile Testing'" do

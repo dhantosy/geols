@@ -1,6 +1,8 @@
 <% provide(:title, 'Services') %>
 
-	<h3>Services</h3>
+<br />
+
+	<h1>Services</h1>
 
 	<div class="center hero-unit">
 		<h1>GeoLS Pte Ltd</h1>
@@ -11,37 +13,76 @@
 
 	</div>
 
+<hr />
+
+	<div class="row group-profile">
+
 		<p>
 			GeoLS offers a comprehensive coverage of Geotechnical Investigation works in both soil and rock, planning and designing package comprehensive instrumentation works for building development, reclamation and tunneling projects inclusive of manual type and real time automatic instrumentation systems together with alarm via GSM Mobile. Our services can be categorized into four different categories:
-
 		</p>
 
-		<div class="row">
+	</div>
+
+<hr />
+
+		<div class="row group-home">
+
 
 			<div class="span6">
-				<ul>
-					<li><a href="<%= services_soil_investigation_path %>">Soil Investigation</a></li>
-				</ul>
+				<div class="mosaic-block-services bar3">
+            		<a href=" <%= services_soil_investigation_path %>" class="mosaic-overlay">
+                		<div class="details">
+                    		<h6>Soil Investigation</h6>
+                    			<p>GeoLS carries out soil investigation and preliminary foundation designs.
+                    			</p>
+                		</div>
+            		</a>
+            		<div class="mosaic-backdrop"><img src= <%= asset_path 'investigation_services.jpg' %>></div>
+        		</div>
 			</div>
 
 			<div class="span6">
-				<ul>
-					<li><a href="<%= services_geotechnical_monitoring_path %>">Geotechnical Instrumentation and Monitoring</a></li>
-				</ul>
+				<div class="mosaic-block-services bar3">
+            		<a href=" <%= services_geotechnical_monitoring_path %>" class="mosaic-overlay">
+                		<div class="details">
+                    		<h6>Geotechnical Instrumentation and Monitoring</h6>
+                    			<p>GeoLS provides geotechnical instrumentation from inclinometer to tiltmeter, and monitor the data given from the instruments to analyze the condition of the soil or structures.
+                    			</p>
+                		</div>
+            		</a>
+            		<div class="mosaic-backdrop"><img src= <%= asset_path 'instrumentation_services.jpg' %>></div>
+        		</div>
+			</div>
+
+
+
+
+			<div class="span6">
+				<div class="mosaic-block-services bar3">
+            		<a href=" <%= services_pile_testing_path %>" class="mosaic-overlay">
+                		<div class="details">
+                    		<h6>Pile Testing</h6>
+                    			<p>Pile testing service is also provided by GeoLS. The pile testing assesses the condition of piles or shafts. It is cost effective and not very time consuming.
+                    			</p>
+                		</div>
+            		</a>
+            		<div class="mosaic-backdrop"><img src= <%= asset_path 'pile_services.jpg' %>></div>
+        		</div>
 			</div>
 
 			<div class="span6">
-				<ul>
-					<li><a href="<%= services_pile_testing_path %>">Pile Testing</a></li>
-				</ul>
-			</div>
 
-			<div class="span6">
-				<ul>
-					<li><a href="<%= services_instrumentation_sales_path %>">Instrumentation Sales and Distribution</a></li>
-				</ul>
+				<div class="mosaic-block-services bar3">
+            		<a href=" <%= services_instrumentation_sales_path %>" class="mosaic-overlay">
+                		<div class="details">
+                    		<h6>Sales and Distribution</h6>
+                    			<p>GeoLS distributes itmsoil's instruments who specializes in the design, development, manufacture and installation of a wide range of geotechnical and structural instrumentation which embody the highest standards of engineering, the latest technology and an accredited quality control system to achieve maximum reliability and long term performance.
+                    			</p>
+                		</div>
+            		</a>
+            		<div class="mosaic-backdrop"><img src= <%= asset_path 'sales_services.jpg' %>></div>
+        		</div>
 			</div>
 
 		</div>
 
-		

@@ -4,75 +4,98 @@
     <!-- Carousel items -->
     <div class="carousel-inner">
 
-	<div class="item active"><!-- class of active since it's the first item -->
-      	<img src= <%= asset_path 'office.jpeg' %> />
-      	<div class="carousel-caption">
-        	<p><a href="<%= contact_path %>">GeoLS Pte Ltd Main Office</a></p>
-      	</div>
-    </div>
+    	<div class="item active"><!-- class of active since it's the first item -->
+          	<img src= <%= asset_path 'office.jpg' %> />
+          	<div class="carousel-caption">
+                <h4> GEOLS PTE LTD </h4>
+            	<p><a href="<%= contact_path %>">GeoLS Pte Ltd Main Office</a></p>
+          	</div>
+        </div>
 
-    <div class="item">
-    	<img src= <%= asset_path 'tunnel.jpg' %> />
-      	<div class="carousel-caption">
-        	<p><a href="<%= services_path %>">Tunnel Monitoring</a></p>
-    	</div>
-    </div>
+        <div class="item">
+        	<img src= <%= asset_path 'tunnel.jpg' %> />
+          	<div class="carousel-caption">
+                <h4> TUNNEL MONITORING </h4>
+            	<p><a href="<%= services_path %>">Tunnel Monitoring</a></p>
+        	</div>
+        </div>
 
-    <div class="item">
-    	<img src= <%= asset_path 'bridge.jpg' %> />
-      	<div class="carousel-caption">
-        	<p><a href="<%= services_path %>">Bridge Monitoring</a></p>
-    	</div>
-    </div>
-
-    <div class="item">
-    	<img src="http://placehold.it/1200x480" />
-      	<div class="carousel-caption">
-        	<p><a href="<%= services_instrumentation_sales_path %>">Geotechnical Instrumentation</a></p>
-    	</div>
-    </div>
+        <div class="item">
+        	<img src= <%= asset_path 'bridge.jpg' %> />
+          	<div class="carousel-caption">
+                <h4> BRIDGE MONITORING </h4>
+            	<p><a href="<%= services_path %>">Bridge Monitoring</a></p>
+        	</div>
+        </div>
 
     </div>
+
+
     <!-- Carousel nav -->
-    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+        <!--  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a> -->
 </div>
 
+<hr />
 
 	<h3> 
 		GeoLS Pte Ltd specializes in soil investigation, pile testing, geotechnical monitoring and structural instrumentation.
 	</h3>
 
+<hr />
 
-
-
- 
-<div class="row">
+<div class="row group-home">
 	<div class="span3"> 
-		<h4><%= link_to "About Us", company_profile_path %></h4>
-    <img src= <%= asset_path 'office_small.jpg' %> />
-		GeoLS is a company specializing in Geotechnical Engineering with a wealth of experiences. It was incorporated in June 29th 2001. GeoLS has a large fleet of boring machines.
-		<a button class="btn" href="<%= company_profile_path %>">read more</a>
-	</div>
-	<div class="span3"> 
-		<h4><%= link_to "Our Services", services_path %></h4>
-    <img src= <%= asset_path 'services_small.jpg' %> />
-		GeoLS provides Geotechnical services which include soil investigation and lab testing, Geotechnical instrumentation and monitoring, as well as pile testing.
-		<a button class="btn" href="<%= services_path %>">read more</a>
+        <div class="mosaic-block bar2">
+            <a href=" <%= company_profile_path %>" class="mosaic-overlay">
+                <div class="details">
+                    <h6>ABOUT US</h6>
+                     <p> GeoLS is a company specializing in Geotechnical Engineering with a wealth of experiences. It was incorporated in June 29th 2001. It has a large fleet of boring machinery.
+                     </p>
+                </div>
+            </a>
+            <div class="mosaic-backdrop"><img src= <%= asset_path 'company_home.jpg' %>></div>
+        </div>
+
 	</div>
 	<div class="span3">
-		<h4><%= link_to "Latest News", news_path %></h4>
-    <img src= <%= asset_path 'news.jpg' %> />
-		GeoLS has become one of the flagship in Geotechnical engineering because of its quality service at reasonable price. It has received ISO 9001 for its safety workplace.
-		<a button class="btn" href="<%= news_path %>">read more</a>
+        <div class="mosaic-block bar2">
+            <a href=" <%= services_path %>" class="mosaic-overlay">
+                <div class="details">
+                    <h6>SERVICES</h6>
+                    <p>
+                      GeoLS provides Geotechnical services which include soil investigation and lab testing, Geotechnical instrumentation and monitoring, as well as pile testing.
+                    </p>
+                </div>
+            </a>
+            <div class="mosaic-backdrop"><img src= <%= asset_path 'services_home.jpg' %>></div>
+        </div>
+    </div>
+
+	<div class="span3">
+        <div class="mosaic-block bar2">
+            <a href=" <%= news_path %>" class="mosaic-overlay">
+                <div class="details">
+                    <h6>NEWS</h6>
+                    <p>GeoLS is a company specializing in Geotechnical Engineering with a wealth of experiences. It was incorporated in June 29th 2001. It has a large fleet of boring machinery.</p>
+                </div>
+            </a>
+            <div class="mosaic-backdrop"><img src= <%= asset_path 'news_home.jpg' %>></div>
+        </div>
 	</div>
+
 		<div class="span3"> 
-		<h4><%= link_to "Contact Us", contact_path %></h4>
-    <img src= <%= asset_path 'contact_small.jpg' %> />
-		If you have any inquiry please do not hesitate to contact us through the contact page. Click read more or simply click the image to go to the inquiry form.​
-		<a button class="btn" href="<%= contact_path %>">read more</a>
+        <div class="mosaic-block bar2">
+            <a href=" <%= contact_path %>" class="mosaic-overlay">
+                <div class="details">
+                    <h6>CONTACT US</h6>
+                    <p>
+                    If you have any inquiry please do not hesitate to contact us by telephone or email through the contact page. Click read more or simply click the image to go to the inquiry form.​
+                    </p>
+                </div>
+            </a>
+            <div class="mosaic-backdrop"><img src= <%= asset_path 'contacts.jpg' %>></div>
+        </div>
+
 	</div>
 </div>
-
-
-

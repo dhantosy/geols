@@ -15,16 +15,22 @@
 //= require bootstrap
 //= require_tree .
 
-$(document).ready(function(){ $(".collapse").collapse() ; }
-
-$(document).ready(function(){ $('.nav-tabs').button() ; }
-
-$(document).ready(function(){ $('.dropdown-toggle').dropdown(); }
-
-$(document).ready(function(){ $('.carousel').carousel() ; }
-
-	<script type="text/javascript">
-$(function(){
-   $('.carousel').carousel();
+$(document).ready(function(){ 
+  $('.collapse').collapse();
+  $('.carousel').carousel();
+  $('.nav-tabs').button() ;
+  $('.dropdown-toggle').dropdown() ;
+  $('#navbar').scrollspy() ;
+  $('.bar2').mosaic({ animation	:'slide'}) ;
+  $('.bar3').mosaic({ animation :'slide'}) ;
+  $('.cover2').mosaic({
+		animation	:	'slide',	//fade or slide
+		anchor_y	:	'top',		//Vertical anchor position
+		hover_y		:	'80%',		//Vertical position on hover
+				}) ;
+  $('#thumbs img').click(function(){
+    $('#largeImage').attr('src',$(this).attr('src').replace('thumb','large'));
+    $('#description').html($(this).attr('alt'));
 });
-</script>
+}) ;
+
