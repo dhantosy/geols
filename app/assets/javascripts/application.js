@@ -30,7 +30,15 @@ $(document).ready(function(){
 				}) ;
   $('#thumbs img').click(function(){
     $('#largeImage').attr('src',$(this).attr('src').replace('thumb','large'));
+    $('#largeImage-services').attr('src',$(this).attr('src').replace('thumb','large'));
     $('#description').html($(this).attr('alt'));
+  });
 });
-}) ;
 
+
+
+$(window).load(function() {
+  if ($('#instrumentation-sales').length > 0) {
+    $('#instrumentation-sales').find('li').first().children().click();
+  }
+});

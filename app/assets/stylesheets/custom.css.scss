@@ -13,6 +13,10 @@ body {
   background-image: url(background.png);background-repeat:repeat-x;
 }
 
+#banner img {
+  float: none;
+}
+
 .navbar-container {
 width: 940px;
 margin-left: auto;
@@ -154,6 +158,12 @@ h6 {
   width: 175px;
   height: 130px;
 }
+
+.row {
+  margin-bottom: -15px;
+
+}
+
 
 .group-home h4 {
   padding: 5px;
