@@ -1,308 +1,55 @@
-@import "bootstrap";
-
-/* UNIVERSAL */
-
-html {
-  overflow-y: scroll;
-}
-
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
 
 body {
-  padding-top: 60px;
-  margin: 0px;
-  background-image: url(background.png);background-repeat:repeat-x;
-}
-
-#banner img {
-  float: none;
-}
-
-.navbar-container {
-width: 940px;
-margin-left: auto;
-margin-right: auto;
-}
-
-section {
-  overflow: auto;
-}
-
-textarea {
-  resize: vertical;
-  resize: horizontal;
-}
-
-.center {
-  text-align: center;
-}
-
-.center h1 {
-  margin-bottom: 10px;
-}
-
-/* TYPOGRAPHY */
-
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
-}
-
-
-
-a {
-  color: #FBB917;
-}
-
-a:hover {
-  color: #FBB917;
-  text-decoration: none;
-}
-
-h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
-}
-
-h2 {
-  font-size: 1.7em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-weight: normal;
-  color: #999;
-}
-
-h3 {
-	font-size: 2em;
-	letter-spacing: 0px;
-	margin-bottom: 30px;
-	text-align: left;
-}
-
-h4 a {
-  font-size: 14px;
-  font-weight: bold;
-  color: #FBB917;
-}
-
-h4 a:hover {
-  color: #fff;
-  text-decoration: none;
+  color: #5a5a5a;
 }
 
 h5 {
   color: #FBB917;
-  text-decoration: none;
 }
 
-h6 {
-  font-size: 1.7em;
-  color: white;
-  text-align: left;
-  margin-top: 5px;
-  margin-left: 5px;
-  margin-bottom: 10px;
-}
-
-.service-page h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 15px;
-  margin-top: 20px;
-}
-
-.contact-map {
-  float: right;
-  
-}
-
-.service-list ul {
-  margin-left: 1.5px;
-  font-weight: bold;
-}
-
-.service-list li {
-  margin-left: 20px;
-}
-
-/* ROW */
-
-.span5 {
-  float: left;
-  width: 504px;
-  height: 500px;
-  margin-left: 10px;
+.img-responsive {
+display: block;
+height: auto;
+max-width: 100%;
+border: 1px solid orange;
 }
 
 
-.span3 {
-  background-color: #fff;
-  border: solid #333333;
-  border-width: 0px;
-  width: 216px;
-  margin-left: 22px;
-  height: 300px;
+.thumbnail h5 {
+  text-align: center;
 }
 
-.span6 {
-  background-color: #fff;
-  border: solid #333333;
-  border-width: 1px;
-  width: 440px;
-  height: 217px;
-  margin-left: 30px;
-  margin-top: 20px;
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+  background-color: #FBB917;
 }
 
-.span7 {
-  width: 175px;
-  height: 130px;
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+
+.navbar-default {
+  background-color: rgba(17, 13, 13, 0.68);
+  border-color: #D67529;
 }
 
-.row {
-  margin-bottom: -15px;
-
-}
-
-
-.group-home h4 {
-  padding: 5px;
-  background-color: #333;
-}
-
-.group-home p {
-  padding-left: 5px;
-  padding-right: 5px;
-  font-size: 12px;
-}
-
-.group-home .button {
-  float: right;
-  margin-top: 17px;
-  margin-right: 6px;
-}
-
-.group-profile {
-  padding-left: 20px;
-}
-
-.group-profile p {
-  padding-top: 10px;
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-.group-profile li {
-  padding-left: 10px;
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-
-.group-contact{
-  float: left;
-}
-
-.group-contact address {
-  padding-left: 30px;
-  padding-top: 30px;
-  font-size: 15px;
-}
-
-.group-contact .icon {
-  margin-left: 30px;
-}
-
-.group-contact img {
-  margin-right: 5px;
-}
-
-.well {
-  width:540px;
-  height: 380px;
-  float: right;
-}
-
-.nav-list {
-  width: 200px;
-  border: 1px solid #999;
-  float: left;
-}
-
-.nav-list a:hover .active {
+.navbar-list a:hover {
   background-color: #413839;
 }
 
-.service-page {
-  width: 940px;
-  height: 662px;
-  background-color: white;
-    border:1px solid #fff;
-  -webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
-  box-shadow:0 1px 3px rgba(0,0,0,0.5);
-  overflow: hidden;
-}
-
-
-.service-page #image {
-  width: 400px;
-  height: 500px;
-  border:1px solid #fff;
-  -webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
-  box-shadow:0 1px 3px rgba(0,0,0,0.5);
-  overflow: hidden;
-  float: left;
-}
-
-
-
-/* HEADER */
-
-.navbar-inner {
-  height: 48px;
-}
-
 .navbar .nav > li > a {
-  padding: 13px 10px 11px;
   color: #FBB917;
 }
 
-.navbar .nav > li {
-  display: block;
-  float: left;
-  width: auto;
+.navbar .nav > li > a:hover {
+  color: #fff;
 }
 
-.navbar .nav.pull-right {
-margin-left: 0px;
-margin-right: 0px;
-width: 940px;
-}
-
-#logo {
-  float: left;
-  margin-right: 328px;
-  margin-left: 10px;
-  margin-bottom: 5px;
-  font-size: 1.9em;
-  color: #FBB917;;
-  text-transform: none;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
-  line-height: 1;
-}
-
-#logo:hover {
-  color: #eee;
-  text-decoration: underline;
-}
-
-img {
-  float: left;
-}
-
-.hero-unit {
+.navbar-list .active {
+  background-color: #fff;
 }
 
 ul.nav li.dropdown:hover ul.dropdown-menu{
@@ -319,310 +66,215 @@ ul.dropdown-menu {
   color: #413839;
 }
 
-/* BOOTSTRAP PLUGIN */
-
-.carousel img{
-  display:block;
-  width:100%;
-  max-width:100%;
-  border: 1px solid gray;
-  padding: 1px;
-  background-color: white; 
+.navbar-nav li .dropdown-menu {
+  background-color: rgba(17, 13, 13, 0.68);
 }
 
-.carousel-inner {
-  overflow: hidden;
+.navbar-nav li .dropdown-menu a:hover {
+  background-color: #FBB917;
+  color: white;
 }
 
-.carousel .item {
-  height: 410px;
+.navbar-nav li .dropdown-menu a {
+  color: #FBB917;
 }
 
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 60px;
+
+}
+/* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-position: absolute;
-left: 0;
-right: 0;
-bottom: 0;
-height: 30px;
-background: #333;
-background: rgba(0, 0, 0, 0.75);
+  z-index: 10;
 }
 
-.carousel .item > img {
-display: block;
-line-height: 1;
-width: 937px;
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 600px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 600px;
 }
 
-.accordion-group {
-  border: 2px solid;
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.accordion-heading {
-  border: 0.5px solid;
-  background-color: #333;
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.accordion-inner {
-  background-color: white;
+.img-circle {
+  border-radius: 50%;
+  border: 1px solid orange;
 }
 
-.scrollspy{
-height: 350px;
-overflow: auto;
-position: relative;
+.carousel-indicators .active {
+width: 12px;
+height: 12px;
+margin: 0;
+background-color: #000;
 }
+
+.carousel-indicators li {
+display: inline-block;
+width: 10px;
+height: 10px;
+margin: 1px;
+text-indent: -999px;
+cursor: pointer;
+border: 1px solid #000;
+border-radius: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Remove the edge padding needed for mobile */
+  .marketing {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+
 
 /* FOOTER */
 
-footer {
+.footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;
   color: #999;
-  background-image: -moz-linear-gradient(top, #333, #222);
-  background-image: -webkit-linear-gradient(top , #333, #222);
-  height: 240px;
-  width: 100%;
+  background: url('footerbg.png') 100% repeat;
+  height: auto;
+  width: auto;
+
 }
 
-footer p {
+.footer p {
   line-height: 8px;
   font-size: 13px;
 }
 
-footer a {
+.footer a {
   color: #999;
 }  
 
-footer a:hover { 
+.footer a:hover { 
   color: #fff;
   text-decoration: none;
 }
 
-
-footer ul li {
+.footer ul li {
   float: left;
   margin-left: 10px;
 }
-#span-footer {
+.span-footer {
   margin-top: 20px;
-  margin-left: 117px;
+  margin-left: 95px;
   margin-right: 0px;
   float: left;
+  width: 255px;
+  height: auto;
 }
 
 #copyright {
-  margin-left: 40%;
-  margin-top: -10px;
-  float: left;
+  height: auto;
+  margin: 0 auto;
+  width: 215px;
+  color: #FBB917;
 }
 
 .row-footer {
-  margin-left: -20px;
-  width: 1299px;
+  width: 100%;
+  height: auto;
   margin: 0px;
-  height: 200px;
-  margin-left: auto;
-  margin-right: auto;
-
-}
-
-.footer-container {
-  width: 1200px;
-  height: 200px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Instrumentation Sales Page Style */
-
-#instrumentation-sales {
-  .tab-content{
-    float: left;
-    height: 500px;
-  }
-}
-
-.thumbnails {
-  width: 400px;
-  height: 750px;
-}
-
-.thumbnails > li {
-  float: left;
-  width: 900px;
-
-}
-
-.thumbnail {
-  float: left;
-  margin-left: 10px;
-  margin-bottom: 30px;
-  background-color: #333;
-}
-
-.thumbnail h5 {
-  margin-top: 190px;
-}
-
-.thumbnail p {
-  color: white;
-}
-
-.tabs-left {
-  float: left;
-}
-
-.nav-tabs > li > a {
-  background-color: #333;
-  color: #FBB917; 
-}
-
-.nav-tabs > li > a:hover {
-  background-color: #fff;
-  color: #000; 
-}
-
-.nav-tabs > .active > a:hover {
-  color: #000;
-  background-color: #fff;
-}
-
-
-/*General Mosaic Styles*/
-
-.mosaic-block {
-  float:left;
-  position:relative;
-  overflow:hidden;
-  width:216px;
-  height:276px;
-  border:1px solid #fff;
-  -webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
-  box-shadow:0 1px 3px rgba(0,0,0,0.5);
-}
-
-.mosaic-block-services {
-  float:left;
-  position:relative;
-  overflow:hidden;
-  width:440px;
-  height:217px;
-  -webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
-  box-shadow:0 1px 3px rgba(0,0,0,0.5);
-}
-
-  .mosaic-backdrop {
-    display:none;
-    position:absolute;
-    top:0;
-    height:100%;
-    width:100%;
-    background:#333;
-  }
+.contact-map {
+  float: right;
   
-  .mosaic-overlay {
-    display:none;
-    z-index:5;
-    position:absolute;
-    width:100%;
-    height:100%;
-    background:#111;
-  }
-  
-/* Custom Animation Styles (You can remove/add any styles below) */
-
-
-    .bar2 .mosaic-overlay {
-      bottom:-115px;
-      height:150px;
-      opacity:0.8;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-      filter:alpha(opacity=80);
-    }
-    
-      .bar2 .mosaic-overlay:hover {
-        opacity:0.9;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-        filter:alpha(opacity=95);
-      }
-
-    .bar3 .mosaic-overlay {
-      bottom:-100px;
-      height:130px;
-      opacity:0.8;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-      filter:alpha(opacity=80);
-    }
-
-
-    .bar3 .mosaic-overlay:hover {
-      opacity:0.95;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-      filter:alpha(opacity=95);
-    }
-    
+}
 /* End Animation Styles */
 
 
-/* CUSTOM SLIDER IN COMPANY PROFILE */
 
-#description {
-background: black;
-color: white;
-position: absolute;
-padding: 10px 20px;
-width: 890px;
-margin-top: 367px;
-margin-left: 2px;
-}
 
-#description-services {
-background: black;
-color: white;
-position: absolute;
-padding: 10px 20px;
-width: 376px;
-margin-top: 497px;
-margin-left: 2px;
-}
 
-#gallery {
-display: block;
-height: 500px;
-width: 940px;
-}
 
-#gallery-services {
-display: block;
-height: 400px;
-width: 416px;
-float: left;
-}
-
-#panel {
-position: relative;
-height: 0px;
-}
-
-#thumbs {
-margin-top: 2px;
-float: left;
-height: 50px;
-width: 100px;
-margin-right: 3.8px;
-}
-
-#thumbs img, #largeImage {
-border: 1px solid gray;
-padding: 1px;
-background-color: white;
-cursor: pointer;
-width: 930px;
-}
-
-#largeImage-services {
-  width: 415px;
-}
 

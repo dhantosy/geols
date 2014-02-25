@@ -1,34 +1,29 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.3'
-gem 'bootstrap-sass', '2.0.0'
+gem 'rails', '3.2.14'
 gem 'heroku'
-
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
+gem 'jquery-rails'
 
 
 group :development, :test do
-	gem 'sqlite3', '1.3.5'
-	gem 'rspec-rails', '2.10.0'
+	gem 'sqlite3'
+	gem 'rspec-rails'
 end
 
 group :assets do
-  gem 'sass-rails',   '3.2.4'
-  gem 'coffee-rails', '3.2.2'
+  gem 'sass-rails'
+  gem 'coffee-rails'
   gem 'therubyracer'
-  gem 'uglifier', '1.2.3'
+  gem 'uglifier'
 end
 
-gem 'jquery-rails'
 
 group :test do
-	gem 'capybara', '1.1.2'
+	gem 'capybara'
 end
 
 group :production do
-	gem 'pg', '0.12.2'
+	gem 'pg'
 end
 
 

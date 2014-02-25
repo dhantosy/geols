@@ -17,28 +17,10 @@
 
 $(document).ready(function(){ 
   $('.collapse').collapse();
-  $('.carousel').carousel();
+  $('.carousel').carousel({
+      interval: 2800
+  });
   $('.nav-tabs').button() ;
   $('.dropdown-toggle').dropdown() ;
   $('#navbar').scrollspy() ;
-  $('.bar2').mosaic({ animation	:'slide'}) ;
-  $('.bar3').mosaic({ animation :'slide'}) ;
-  $('.cover2').mosaic({
-		animation	:	'slide',	//fade or slide
-		anchor_y	:	'top',		//Vertical anchor position
-		hover_y		:	'80%',		//Vertical position on hover
-				}) ;
-  $('#thumbs img').click(function(){
-    $('#largeImage').attr('src',$(this).attr('src').replace('thumb','large'));
-    $('#largeImage-services').attr('src',$(this).attr('src').replace('thumb','large'));
-    $('#description').html($(this).attr('alt'));
-  });
-});
-
-
-
-$(window).load(function() {
-  if ($('#instrumentation-sales').length > 0) {
-    $('#instrumentation-sales').find('li').first().children().click();
-  }
 });

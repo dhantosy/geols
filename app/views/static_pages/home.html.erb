@@ -1,106 +1,138 @@
 <% provide(:title, 'Home') %>
 
-<div id="myCarousel" class="carousel slide">
-    <!-- Carousel items -->
-    <div class="carousel-inner">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
 
-    	<div class="item active"><!-- class of active since it's the first item -->
-          	<img src= <%= asset_path 'office.jpg' %> />
-          	<div class="carousel-caption">
-                <h4> GEOLS PTE LTD </h4>
-            	<p><a href="<%= contact_path %>">GeoLS Pte Ltd Main Office</a></p>
-          	</div>
+    <title>GeoLS Pte Ltd</title>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="assets/gls-office.jpg" data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:First slide" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>GeoLS Pte Ltd</h1>
+              <p>The specialist in soil investigation, geotechnical instrumentation and monitoring </p>
+
+            </div>
+          </div>
         </div>
-
         <div class="item">
-        	<img src= <%= asset_path 'tunnel.jpg' %> />
-          	<div class="carousel-caption">
-                <h4> TUNNEL MONITORING </h4>
-            	<p><a href="<%= services_path %>">Tunnel Monitoring</a></p>
-        	</div>
+          <img src="assets/itmsoil-hq.jpg" data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:Second slide" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Official Distributor of itmsoil</h1>
+              <p>We are a part of itmsoil group, a world leader of premium quality geotechnical and structural monitoring instrumentation.</p>
+            </div>
+          </div>
         </div>
-
         <div class="item">
-        	<img src= <%= asset_path 'bridge.jpg' %> />
-          	<div class="carousel-caption">
-                <h4> BRIDGE MONITORING </h4>
-            	<p><a href="<%= services_path %>">Bridge Monitoring</a></p>
-        	</div>
+          <img src="assets/tunnel.jpg" data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:Third slide" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Tunnel Monitoring and Instrumentation</h1>
+              <p>We provide Instrumentation and Monitoring services.</p>
+            </div>
+          </div>
         </div>
+      </div>
+    </div><!-- /.carousel -->
 
-    </div>
 
 
-    <!-- Carousel nav -->
-        <!--  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a> -->
-</div>
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
 
-<hr />
+    <div class="container marketing">
 
-	<h3> 
-		GeoLS Pte Ltd specializes in soil investigation, pile testing, geotechnical monitoring and structural instrumentation.
-	</h3>
 
-<hr />
+      <!-- START THE FEATURETTES -->
 
-<div class="row group-home">
-	<div class="span3"> 
-        <div class="mosaic-block bar2">
-            <a href=" <%= company_profile_path %>" class="mosaic-overlay">
-                <div class="details">
-                    <h6>ABOUT US</h6>
-                     <p> GeoLS is a company specializing in Geotechnical Engineering with a wealth of experiences. It was incorporated in June 29th 2001. It has a large fleet of boring machinery.
-                     </p>
-                </div>
-            </a>
-            <div class="mosaic-backdrop"><img src= <%= asset_path 'company_home.jpg' %>></div>
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Soil Investigation</h2>
+          <p class="lead">We offer a comprehensive coverage of Geotechnical Investigation works in both soil and rock, planning and designing package for instrumentation works in structure and building development, reclamation and tunneling projects, inclusive of manual type and real time automatic instrumentation systems, together with alarm via GSM Mobile.</p>
+          <p><a href="<%= services_soil_investigation_path %>" class="btn btn-warning">Read More &raquo;</a></p>
         </div>
-
-	</div>
-	<div class="span3">
-        <div class="mosaic-block bar2">
-            <a href=" <%= services_path %>" class="mosaic-overlay">
-                <div class="details">
-                    <h6>SERVICES</h6>
-                    <p>
-                      GeoLS provides Geotechnical services which include soil investigation and lab testing, Geotechnical instrumentation and monitoring, as well as pile testing.
-                    </p>
-                </div>
-            </a>
-            <div class="mosaic-backdrop"><img src= <%= asset_path 'services_home.jpg' %>></div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="assets/sample3.png" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
         </div>
-    </div>
+      </div>
 
-	<div class="span3">
-        <div class="mosaic-block bar2">
-            <a href=" <%= news_path %>" class="mosaic-overlay">
-                <div class="details">
-                    <h6>NEWS</h6>
-                    <p>GeoLS has become one of the flagship in Geotechnical engineering because of its quality service at reasonable price. It has received ISO 9001 for its safety workplace.</p>
-                </div>
-            </a>
-            <div class="mosaic-backdrop"><img src= <%= asset_path 'news_home.jpg' %>></div>
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="assets/sample3.png" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
         </div>
-	</div>
-
-		<div class="span3"> 
-        <div class="mosaic-block bar2">
-            <a href=" <%= contact_path %>" class="mosaic-overlay">
-                <div class="details">
-                    <h6>CONTACT US</h6>
-                    <p>
-                    If you have any inquiry please do not hesitate to contact us by telephone or email through the contact page. Click read more or simply click the image to go to the inquiry form.​
-                    </p>
-                </div>
-            </a>
-            <div class="mosaic-backdrop"><img src= <%= asset_path 'contacts.jpg' %>></div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Geotechnical Instrumentation and Monitoring Works</h2>
+          <p class="lead">We provides Geotechnical Instrumentation from Inclinometer System, Vibration and Noise Monitoring, Recharge well, to Tiltmeter System. We also provide automatic monitoring system  to monitor the data given from the instruments to analyze condition of the soil or structures.</p>
+          <p><a href="<%= services_geotechnical_monitoring_path %>" class="btn btn-warning">Read More &raquo;</a></p>
         </div>
+      </div>
 
-	</div>
+      <hr class="featurette-divider">
 
-</div>
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Instrumentation Sales and Distribution</span></h2>
+          <p class="lead">We are the only official itmsoil distributor in Singapore. itmsoil specializes in the design, development, manufacture, and installation of a wide range of geotechnical and structural instrumentation, which embody the highest standards of engineering with the latest technology and an accredited quality control system to achieve maximum reliability and long term performance.</p>
+          <p><a href="<%= services_instrumentation_sales_path %>" class="btn btn-warning">Read More &raquo;</a></p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="assets/sample3.png" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+            <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="assets/logo-small.jpg" data-src="holder.js/300x300" alt="Generic placeholder image">
+          <h2>About Us</h2>
+          <p>We are specializing in Geotechnical Engineering with a vast experiences for more than 10 years in the industry. It was incorporated in June 29th, 2001.</p>
+          <p><a href="<%= company_profile_path %>" class="btn btn-warning">Read More &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="assets/news-home.jpg" data-src="holder.js/300x300" alt="Generic placeholder image">
+          <h2>News</h2>
+          <p>GeoLS Pte Ltd has become one of the flagship in Geotechnical Engineering. We are certified with ISO 9001 for our safety workplace.</p>
+          <p><a href="<%= news_path %>" class="btn btn-warning">Read More &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="assets/contacts.jpg" data-src="holder.js/300x300" alt="Generic placeholder image">
+          <h2>Contact Us</h2>
+          <p>Please do not hesitate to contact us if you have any enquiry by telephone or email. Please visit our Contact page for more detail.</p>
+          <p><a href="<%= contact_path %>" class="btn btn-warning">Read More &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+
+      </div>
 
 
-
-<hr />
+    </div><!-- /.container -->
+  </body>

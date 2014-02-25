@@ -20,9 +20,6 @@ class StaticPagesController < ApplicationController
   def geotechnical_monitoring
   end
 
-  def pile_testing
-  end
-
   def instrumentation_sales
   end
   

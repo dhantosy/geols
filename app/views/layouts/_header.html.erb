@@ -1,39 +1,37 @@
-<header class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="navbar-container">
-          
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <%= image_tag('logo-transparent.png') %>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar">
+          </span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>      
+    </div>
 
-          <nav>
-            <ul class="nav pull-right">
-              <id class="img-header">
-              <img src= <%= asset_path 'logo_transparent.png' %> />
-            </id>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><%= link_to "Home", root_path %><Home></li>
+            <li><%= link_to "About GeoLS Pte Ltd", company_profile_path %></li>
+            
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="<%= services_path %>"> Our Services <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="<%= services_soil_investigation_path %>">Soil Investigation</a></li>
+                <li><a href="<%= services_geotechnical_monitoring_path %>">Geotechnical Instrumentation and Monitoring</a></li>
+                <li><a href="<%= services_instrumentation_sales_path %>">Instrumentation Sales and Distribution</a></li>
 
-              <%= link_to "GeoLS Pte Ltd", root_path, id: "logo" %>
+              </ul>
+            </li>
 
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "News", news_path %></li>
+            <li><%= link_to "Contact Us", contact_path %></li>
 
-                <li><%= link_to "Home", root_path %></li>
-
-                  <li class="dropdown" id="menu1">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="<%= services_path %>">
-                        Services <b class="caret"></b>
-                    </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="<%= services_soil_investigation_path %>">Soil Investigation</a></li>
-                            <li><a href="<%= services_geotechnical_monitoring_path %>">Geotechnical Instrumentation and Monitoring</a></li>
-                            <li><a href="<%= services_pile_testing_path %>">Pile Testing</a></li>
-                            <li><a href="<%= services_instrumentation_sales_path %>">Instrumentation Sales and Distribution</a></li>
-                        </ul>
-
-                  <li><%= link_to "Company Profile", company_profile_path %></li>
-                  <li><%= link_to "News", news_path %></li>
-                  <li><%= link_to "Contact Us", contact_path %></li>
-
-
-                </li>   
-            </ul>
-          </nav>
-        </div>
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
-
-</header>
+    </div>

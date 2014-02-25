@@ -9,7 +9,6 @@ Geols::Application.routes.draw do
 
   match '/services/soil_investigation', to: 'static_pages#soil_investigation'
   match '/services/geotechnical_monitoring', to: 'static_pages#geotechnical_monitoring'
-  match '/services/pile_testing', to: 'static_pages#pile_testing'
   match '/services/instrumentation_sales', to: 'static_pages#instrumentation_sales'
 
 
