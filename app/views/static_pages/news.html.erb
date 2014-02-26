@@ -1,30 +1,44 @@
 <% provide(:title, 'News') %>
 
-<br />
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide">
+      <!-- Indicators -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="assets/news.jpg" data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:First slide" alt="First slide">
+        </div>
+      </div>
+</div>
 
+<div class="container">
 	<h1>News</h1>
-
-	<div id="banner">
-
-        <img src= <%= asset_path 'news_banner.jpg' %> />
-
-	</div>
-
-    <p>Please click the link below to see the content.</p>
-
-
 
 <div id="accordion-news" class="accordion">
 
 
     <div class="accordion-group">
         <div class="accordion-heading">
-            <a class="accordion-toggle" href="#collapseTwo" data-toggle="collapse" data-parent="#accordion-news" style="font-weight: bold">
+            <a class="accordion-toggle" href="#collapseSeven" data-toggle="collapse" data-parent="#accordion-news" style="font-weight: bold">
+            15/02/2014 - Company Website revamped!
+            </a>
+        </div>
+     
+        <div id="collapseSeven" class="accordion-body collapse in" style=" height: auto;">
+            <div class="accordion-inner"> We are pleased to announce our revamped website for our users to navigate easily.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle" href="#collapseSix" data-toggle="collapse" data-parent="#accordion-news" style="font-weight: bold">
             26/02/2013 - Awarded for Instrumentation and Monitoring Works Contract
             </a>
         </div>
      
-        <div id="collapseTwo" class="accordion-body collapse in" style=" height: auto;">
+        <div id="collapseSix" class="accordion-body collapse in" style=" height: auto;">
             <div class="accordion-inner"> Awarded for Instrumentation and Monitoring Works Contract.
             </div>
         </div>
@@ -34,42 +48,26 @@
 
     <div class="accordion-group">
         <div class="accordion-heading">
-            <a class="accordion-toggle" href="#collapseOne" data-toggle="collapse" data-parent="#accordion-news" style="font-weight: bold">
+            <a class="accordion-toggle" href="#collapseFive" data-toggle="collapse" data-parent="#accordion-news" style="font-weight: bold">
             09/02/2013 - Happy Chinese New Year!
             </a>
         </div>
      
-        <div id="collapseOne" class="accordion-body collapse in" style=" height: auto;">
+        <div id="collapseFive" class="accordion-body collapse in" style=" height: auto;">
             <div class="accordion-inner"> Happy Chinese Lunar Year! Wishing you a prosperous year.
             </div>
         </div>
 
     </div>
 
-
     <div class="accordion-group">
         <div class="accordion-heading">
-            <a class="accordion-toggle" href="#collapseTwo" data-toggle="collapse" data-parent="#accordion-news" style="font-weight: bold">
-            01/01/2013 - Merry Christmas and Happy New Year!
-            </a>
-        </div>
-     
-        <div id="collapseTwo" class="accordion-body collapse in" style=" height: auto;">
-            <div class="accordion-inner"> Merry Christmas and Happy New year from all our staffs to our clients and suppliers.
-            </div>
-        </div>
-
-    </div>
-
-
-    <div class="accordion-group">
-        <div class="accordion-heading">
-            <a class="accordion-toggle" href="#collapseThree" data-toggle="collapse" data-parent="#accordion-news" style="font-weight: bold">
+            <a class="accordion-toggle" href="#collapseFour" data-toggle="collapse" data-parent="#accordion-news" style="font-weight: bold">
             06/06/2012 - Awarded for Soil Investigation Contract
             </a>
         </div>
      
-        <div id="collapseThree" class="accordion-body collapse in" style=" height: auto;">
+        <div id="collapseFour" class="accordion-body collapse in" style=" height: auto;">
             <div class="accordion-inner"> 
                 Awarded for Soil Investigation Contract.
             </div>
@@ -80,12 +78,12 @@
 
 	<div class="accordion-group">
 		<div class="accordion-heading">
-    		<a class="accordion-toggle" href="#collapseFour" data-toggle="collapse" data-parent="#accordion-news" style="font-weight: bold">
+    		<a class="accordion-toggle" href="#collapseThree" data-toggle="collapse" data-parent="#accordion-news" style="font-weight: bold">
     		06/06/2012 - Awarded for Soil Investigation Contract
     		</a>
 		</div>
      
-    	<div id="collapseFour" class="accordion-body collapse in" style=" height: auto;">
+    	<div id="collapseThree" class="accordion-body collapse in" style=" height: auto;">
     		<div class="accordion-inner"> 
                 Awarded for Soil Investigation Contract.
     		</div>
@@ -95,12 +93,12 @@
 
     <div class="accordion-group"</div>
 		<div class="accordion-heading" >
-    		<a class="accordion-toggle" href="#collapseFive" data-toggle="collapse" data-parent="#accordion-news" style="font-weight: bold">
+    		<a class="accordion-toggle" href="#collapseTwo" data-toggle="collapse" data-parent="#accordion-news" style="font-weight: bold">
     		27/05/2012 - bizSAFE Star Certification
     		</a>
 		</div>
      
-    	<div id="collapseFive" class="accordion-body collapse in" style=" height: auto;">
+    	<div id="collapseTwo" class="accordion-body collapse in" style=" height: auto;">
     		<div class="accordion-inner"> GeoLS Pte Ltd has been awarded with bizSAFE Star certificate.
     		</div>
     	</div>
@@ -109,15 +107,15 @@
 
     <div class="accordion-group"</div>
 		<div class="accordion-heading" >
-    		<a class="accordion-toggle" href="#collapseSix" data-toggle="collapse" data-parent="#accordion-news" style="font-weight: bold">
+    		<a class="accordion-toggle" href="#collapseOne" data-toggle="collapse" data-parent="#accordion-news" style="font-weight: bold">
     		15/05/2012 - GeoLS Pte Ltd New Website
     		</a>
 		</div>
      
-    	<div id="collapseSix" class="accordion-body collapse in" style=" height: auto;">
+    	<div id="collapseOne" class="accordion-body collapse in" style=" height: auto;">
     		<div class="accordion-inner"> GeoLS have launched its premier stand alone website which can be accessed in www.geols.com.sg. The website is one of GeoLS' way promote its services and become the biggest in the industry. The website provides detail explanation of all the services. It also provide a picture gallery of the geotechnical instrumentation including the data sheets of each instrument. We hope this website serves its purposes to our users and clients. We can be reached from the Contact page which have the inquiry form, which we monitor daily. Thank you.
     		</div>
     	</div>
-
+        </div>
     </div>
 </div>

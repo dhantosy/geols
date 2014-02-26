@@ -1,48 +1,77 @@
 <% provide(:title, 'Contact Us') %>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
-<br />
-    <div class="container marketing">
-	<h1>Contact Us</h1>
+<script>
+      function initialize() {
+        
+
+      	var myLocation = new google.maps.LatLng(1.336657, 103.911020);
+
+        var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+          center: new google.maps.LatLng(1.336657, 103.911020),
+          zoom: 16,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options);
+
+		var contentString = '<div id="content">'+
+		      '<div id="siteNotice">'+
+		      '</div>'+
+		      '<h1 id="firstHeading" class="firstHeading">GeoLS Pte Ltd</h1>'+
+		      '<div id="bodyContent">'+
+		      '<p> Specialist in Soil Investigation and Geotechnical Instrumentation. </p> ' +
+		      '</div>'+
+		      '</div>';
+
+		  var infowindow = new google.maps.InfoWindow({
+		      content: contentString
+		  });
+
+      
+		var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+
+		var marker = new google.maps.Marker({
+		  position: myLocation,
+		  map: map,
+
+		});
+
+		google.maps.event.addListener(marker, 'click', function() {
+    	infowindow.open(map,marker);
+  		});
+
+      }
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
+
+<div class="wrapper">
+	<div id="map_canvas"></div>
+</div>
 
 
+<div class="container">
+	<h1>Contact Us</h1><br/>
 
-	<div class="row group-contact">
-
-		<address>
-			<strong> GeoLS Pte Ltd </strong>
-			<br>
-			61 Kaki Bukit Ave 1, #04-30
-			<br>
-			Shun Li Industrial Park
-			<br>
-			Singapore, 417943
-			<br>
-			<abbr title="Phone"><i class="icon-user"></i></abbr>
-			+65 6546 5585
-			<br>
-			<abbr title="Fax"><i class="icon-print"></i></abbr>
-			+65 6546 5595
-			<br>
-			<abbr title="Email"><i class="icon-envelope"></i></abbr>
+		<div class="address">
+			<p><strong> GeoLS Pte Ltd </strong></p>
+			<p>61 Kaki Bukit Ave 1, #04-30</p>
+			<p>Shun Li Industrial Park</p>
+			<p>Singapore, 417943</p>
+			<p><abbr title="Phone"><i class="icon-user"></i></abbr>
+			+65 6546 5585</p>
+			<p><abbr title="Fax"><i class="icon-print"></i></abbr>
+			+65 6546 5595</p>
+			<p><abbr title="Email"><i class="icon-envelope"></i></abbr>
 			<a href="mailto:admin@geols.com.sg">
-			admin@geols.com.sg </a>
-		</address>
+			admin@geols.com.sg </a></p>
+		</div>
 
 		<div class="icon">
 			<a href="http://facebook.com/geols.pte.ltd" target="blank">
 				<img src= <%= asset_path 'facebook.png' %>> </a>
 		</div>
-
-		<div class="icon">
-			<a href="#">
-				<img src= <%= asset_path 'twitter.png' %>> </a>
-		</div>
-
-	</div>
-
-	<div class="contact-map">
-
-	<img src="//maps.googleapis.com/maps/api/staticmap?center=61+kaki+bukit+avenue+1&zoom=15&size=960x600&markers=color:blue%7Clabel:•%7C61+kaki+bukit+avenue+1&sensor=false">
-
-	</div>
-	</div>
+	
+</div>
